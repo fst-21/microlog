@@ -442,7 +442,7 @@ ulog_status ulog_cleanup(void);
 #elif defined(__IAR_SYSTEMS_ICC__)
 #define ULOG_INLINE _Pragma("inline=forced") inline
 #else
-#define ULOG_INLINE inline
+#define ULOG_INLINE static inline
 #endif
 
 // clang-format off
